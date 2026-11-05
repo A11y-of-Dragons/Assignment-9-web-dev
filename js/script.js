@@ -1,5 +1,5 @@
 console.log("script.js loaded");
-let endpoint = "https://api.giphy.com/v1/gifs/search?api_key=wI8PEcrdnuSbkcgzZPGc18EOiS1R0n1p&q=cats"; 
+let endpoint = "https://api.giphy.com/v1/gifs/search?api_key=wI8PEcrdnuSbkcgzZPGc18EOiS1R0n1p&q=dogs"; 
 
 function getGiphy(){
 fetch(endpoint).then(function(fun){
@@ -19,6 +19,7 @@ fetch(endpoint).then(function(fun){
 });
 };
 const button = document.getElementById("fetch-gif-btn");
+
 
 button.addEventListener("click", function () {
   getGiphy();
